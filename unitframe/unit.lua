@@ -22,7 +22,7 @@
     PlayerFrameBackground.bg:SetPoint('TOPLEFT', PlayerFrameBackground)
     PlayerFrameBackground.bg:SetPoint('BOTTOMRIGHT', PlayerFrameBackground, 0, 22)
     PlayerFrameBackground.bg:SetVertexColor(colour.r, colour.g, colour.b, 1)
-    PlayerFrameBackground.bg:SetTexture(NAME_TEXTURE)
+    --PlayerFrameBackground.bg:SetTexture(NAME_TEXTURE)
     PlayerFrameBackground.bg:SetTexCoord(1, 0, 0, 1)
 
     PlayerFrame.status = PlayerFrameTexture:GetParent():CreateFontString(nil, 'OVERLAY')
@@ -185,9 +185,7 @@
         else
             local _, class = UnitClass'target'
             local colour = RAID_CLASS_COLORS[class]
-            if UnitIsPlayer'target' then
-                TargetFrameNameBackground:SetVertexColor(colour.r, colour.g, colour.b, 1)
-            end
+            TargetFrameNameBackground:SetVertexColor(0, 0, 0, 0)
         end
     end)
 
