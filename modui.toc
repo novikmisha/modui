@@ -98,7 +98,7 @@ chat\chat.lua
 chat\event.lua
 chat\quest.lua
 
-combattext\ct.lua
+##combattext\ct.lua
 
 friends\friends.lua
 friends\guild.lua
