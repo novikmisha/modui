@@ -198,11 +198,7 @@
         orig.TargetofTarget_Update()
         local _, class = UnitClass'targettarget'
         local colour = RAID_CLASS_COLORS[class]
-        if UnitIsPlayer'targettarget' then
-            TargetofTargetName:SetTextColor(colour.r, colour.g, colour.b)
-        else
-            TargetofTargetName:SetTextColor(1, .8, 0)
-        end
+        TargetofTargetName:SetTextColor(1, .8, 0)
     end
 
     function UnitFrameHealthBar_OnValueChanged(v)
