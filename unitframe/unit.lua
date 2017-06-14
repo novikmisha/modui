@@ -130,13 +130,15 @@
     local colourParty = function()              -- PARTY CLASS COLOUR
         for i = 1, MAX_PARTY_MEMBERS do
             local name = _G['PartyMemberFrame'..i..'Name']
+            --[[
             if UnitIsPlayer('party'..i) then
                 local _, class = UnitClass('party'..i)
                 local colour = RAID_CLASS_COLORS[class]
                 if colour then name:SetTextColor(colour.r, colour.g, colour.b) end
             else
+            --]]
                 name:SetTextColor(1, .8, 0)
-            end
+            --end
         end
     end
 
